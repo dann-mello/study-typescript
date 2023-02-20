@@ -1,6 +1,9 @@
-function somaNumeros(n1: number, n2: number) {
-    return n1 + n2
-}
+//Variaveis
 
-console.log(somaNumeros(2, 6))
-console.log(somaNumeros(1,9))
+let b:string = 'b';
+const c:number = 2;
+
+let x:boolean = true;
+
+let n:string | number = 2;
+n = 'Daniel';
