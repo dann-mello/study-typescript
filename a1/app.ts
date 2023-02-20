@@ -1,33 +1,22 @@
-//Objetos e interfaces
-
-interface Pessoa {
-    nome: string,
-    idade: number,
-    profissao?: string
+const numero: number = 15;
+if (numero > 15) {
+    console.log('Numero maior que 15');
+} else if (numero === 15) {
+    console.log('Numero igual 15');
+} else {
+    console.log('Numero menor que 15');
 }
 
-const pessoa: Pessoa = {
-    nome: 'Daniel',
-    idade: 19
+const typeUser = {
+    admin: 'Seja bem vindo',
+    student: 'Você é um estudante',
+    viewer: 'Você pode visualizar'
 }
 
-const pessoa2: Pessoa = {
-    nome: 'Paulo',
-    idade: 78,
-    profissao: 'Desenvolvedor'
+const usuario = 'admin';
+
+function validateUser(user:string){
+    console.log(typeUser[user as keyof typeof typeUser])
 }
 
-const arrayPessoa: Pessoa[] = [
-    pessoa, 
-    pessoa2
-] 
-
-const arrayNumeros: number[] = [
-    1, 
-    2
-]
-
-const arrayString: string[] = [
-    'pessoa', 
-    'pessoa2'
-]
+validateUser(usuario)
