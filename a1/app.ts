@@ -1,9 +1,33 @@
-//Variaveis
+//Objetos e interfaces
 
-let b:string = 'b';
-const c:number = 2;
+interface Pessoa {
+    nome: string,
+    idade: number,
+    profissao?: string
+}
 
-let x:boolean = true;
+const pessoa: Pessoa = {
+    nome: 'Daniel',
+    idade: 19
+}
 
-let n:string | number = 2;
-n = 'Daniel';
+const pessoa2: Pessoa = {
+    nome: 'Paulo',
+    idade: 78,
+    profissao: 'Desenvolvedor'
+}
+
+const arrayPessoa: Pessoa[] = [
+    pessoa, 
+    pessoa2
+] 
+
+const arrayNumeros: number[] = [
+    1, 
+    2
+]
+
+const arrayString: string[] = [
+    'pessoa', 
+    'pessoa2'
+]
