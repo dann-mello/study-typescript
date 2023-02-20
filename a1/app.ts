@@ -1,24 +1,20 @@
-const array: Array<any> = [1, 2, 3, 4];
-const stringArray: string[] = ['1', '2', '3'];
+//OO
+class User {
+    name: string = 'Daniel'
+    age: number = 19
 
-// console.log(array[1]);
-// console.log(stringArray.length);
+    constructor(name: string, age:number){
+        this.name = name;
+        this.age = age;
+    }
 
-// const buscaNum = array.find((num) => {
-//     return num === 4;
-// })
+    showName = () => {
+        console.log(this.name)
+    }
+}
 
-// console.log(buscaNum);
+const user1 = new User('Daniel', 19);
+user1.showName();
 
-array.forEach((num) => {
-   if(num > 2 && num % 2 === 0){
-    console.log(num * 2)
-   }
-})
-
-array.map((num) => {
-   if(num > 2 && num % 2 === 0){
-    console.log(num * 2)
-   }
-})
-
+const user2 = new User('Joao', 129);
+user2.showName();
