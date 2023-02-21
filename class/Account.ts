@@ -1,6 +1,6 @@
 export abstract class Account {
     private name: string
-    accountNumber: number
+    readonly accountNumber: number
     balance: number = 20
     private status: boolean = true
 
